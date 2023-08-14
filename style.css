@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+header {
+    background: rgb(229, 31, 39);
+}
+
+li {
+    list-style: none !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =================== nav ===================*/
+
+.navbar {
+    background-color: #ffd400;
+}
+
+.navbar li button {
+    background-color: rgba(255, 172, 10, .6);
+    border: none;
+    padding: 2px 15px;
+    border-radius: 5px;
+}
+
+.navbar li input {
+    position: relative;
+    border-radius: 5px;
+    padding: 8px 8px 8px 13px;
+}
+
+.navbar li input::placeholder {
+    font-size: 14px;
+    color: #333;
+}
+
+.navbar li input i {
+    position: absolute;
+    top: 50%;
+}
+
+.navbar li input::placeholder {
+    font-size: 14px;
+    color: #000;
+}
+
+.navbar li input::placeholder {
+    font-size: 14px;
+    color: #333;
+}
+
+.navbar li button:hover {
+    background-color: rgba(255, 172, 10, .8);
+}
+
+
+.navbar li a {
+    color: #000;
+    position: relative;
+}
+
+.navbar-1 li a::after {
+    content: '';
+    position: absolute;
+    height: 90%;
+    width: 1px;
+    background: #333333;
+    margin-top: 5px;
+    right: -20px;
+    top: 0;
+}
+
+.navbar-1 {
+    background-color: #ffd400;
+    top: -10px;
+}
+
+.menu-item {
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s ease;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.menu:hover .menu-item {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+}
+
+.item {
+    line-height: 40px;
+}
+
+.item:hover {
+    scale: 1.1px;
+    font-weight: bold;
+}
+
+.banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-item {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 10px;
+    margin-top: -80px;
+}
+
+.slide-img {
+    border-radius: 20px;
+}
+
+.btn-menu {
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    padding: 5px 150px;
+    grid-gap: 50px;
+    margin-top: 50px;
+}
+
+.card-body a {
+    font-size: 22px;
+    color: #000;
+}
+
+.card button {
+    border: none !important;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+
+.col-md-4 img {
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.img {
+    justify-content: center;
+    justify-items: center;
+}
+
+/* =================== product ===================*/
+
+.products {
+    display: flex;
+    background-color: #b44545;
+    padding: 0 150px;
+}
+
+.product {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+.product-img {
+    width: 174px;
+    height: 174px;
+}
+
+.product-info a {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
